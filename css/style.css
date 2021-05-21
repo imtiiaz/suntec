@@ -1,0 +1,676 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Responsive  Landing Page Template  
+    Template URI:
+    Description: This is html5 template
+    Author: 
+    Author URI: 
+    Version: 2
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Template default css
+    2. Header Section
+    3. Slider Section
+    4. Service Section 
+    5. About Section
+    6. Career Section
+    7. Testimonials Section
+    8. Subscribe Section 
+    9. Pricing Section
+    10. Counter Section
+    11. Footer Section
+    12. Scrollup
+    13. Blog details
+    
+    
+-----------------------------------------------------------------------------------*/
+
+
+/* 1.---------------------------------------------
+                Template default css
+------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    font-weight: 500;
+}
+
+@media screen and (max-width:767px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+button:focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.overflow_x {
+    overflow-x: hidden;
+}
+
+
+/* 2.-------------------------------------------
+                    Heder Section
+-----------------------------------------------*/
+
+header {
+    padding: 20px 0;
+}
+
+.main_menu {
+    padding: 10px 0;
+}
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 100px 10px rgb(34 34 34 / 6%);
+}
+
+.navbar-toggler {
+    border: 1px solid #000;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    color: #000;
+    margin: 5px 30px;
+    padding: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #dd3700;
+}
+
+.button .btn {
+    font-size: 18px;
+    background: #000;
+    color: #fff;
+    padding: 20px 30px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.button .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+header .button .btn {
+    color: #000;
+    background: #fff;
+}
+
+header .button .btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+@media screen and (max-width:1199px) {
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+        margin: 5px 15px;
+    }
+
+    .button .btn {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    header .button .btn {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .navbar-brand img {
+        width: 170px;
+    }
+
+}
+
+@media screen and (min-width:575px) and (max-width:1199px) {}
+
+/* 3.-------------------------------------------
+                    Banner Section
+-----------------------------------------------*/
+
+.banner_text h4 {
+    font-size: 18px;
+    color: #dd3700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.banner_text h1 {
+    font-size: 70px;
+    font-weight: 900;
+    padding: 10px 0 15px;
+}
+
+.banner_text p {
+    padding-bottom: 25px;
+}
+
+.banner_img {
+    padding-top: 70px;
+}
+
+@media screen and (max-width:767px) {}
+
+/* 4.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+
+@media screen and (max-width:767px) {
+    .banner_text h4 {
+        font-size: 16px;
+    }
+
+    .banner_text h1 {
+        font-size: 32px;
+    }
+}
+
+/* 5.-------------------------------------------
+                    Efficiency Section
+-----------------------------------------------*/
+
+#efficiency_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#efficiency_section h2 {
+    padding-bottom: 90px;
+}
+
+.efficiency_item {
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 0 30px;
+}
+
+.efficiency_item .img {
+    position: relative;
+    display: inline-block;
+}
+
+.efficiency_item .img:after {
+    position: absolute;
+    content: '';
+    background: #fde6b2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: -10px;
+    top: -20px;
+    z-index: -1;
+}
+
+.efficiency_item img {
+    max-width: 75px;
+}
+
+.efficiency_item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.many_more a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:991px) {
+    .efficiency_item {
+        padding: 0;
+    }
+
+    .efficiency_item .img:after {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+    }
+
+    .efficiency_item img {
+        max-width: 50px;
+    }
+
+    .efficiency_item h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #efficiency_section h2 {
+        padding-bottom: 70px;
+    }
+
+    .efficiency_item {
+        padding: 0 30px;
+        margin-bottom: 50px
+    }
+
+    .many_more a {
+        font-size: 16px;
+    }
+}
+
+/* 6.-------------------------------------------
+                    Business Section
+-----------------------------------------------*/
+#business_section {
+    background: #fff8e8;
+    padding: 100px 0;
+}
+
+.business_text h2 {
+    padding-bottom: 20px;
+}
+
+.business_item {
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.business_item h2 {
+    font-size: 32px;
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+}
+
+.business_item h2:after {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 5px;
+    top: 7px;
+    bottom: 5px;
+    left: -20px;
+}
+
+.business_item p {
+    color: #98948b;
+    font-size: 18px;
+}
+
+@media screen and (max-width:767px) {
+    #business_section {
+        padding: 60px 0;
+    }
+
+    .business_item h2 {
+        font-size: 21px;
+    }
+
+    .business_item p {
+        font-size: 16px;
+    }
+}
+
+/* 7.-------------------------------------------
+                    Help Section
+-----------------------------------------------*/
+
+#help_section {
+    padding: 120px 0;
+}
+
+.help_text {
+    padding: 100px 40px 0;
+}
+
+.help_text p {
+    padding-top: 30px;
+    color: #98948b;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:1199px) {
+    .help_text {
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .help_text p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #help_section {
+        padding: 80px 0;
+    }
+
+    .help_text {
+        margin-top: 50px;
+    }
+}
+
+/* 8.-------------------------------------------
+                    Access Section
+-----------------------------------------------*/
+
+#access_section {
+    padding-bottom: 100px;
+}
+
+.access_text {
+    padding: 100px 40px 0;
+}
+
+.access_text p {
+    padding-top: 30px;
+    color: #98948b;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1199px) {
+    .access_text {
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .access_text p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #access_section {
+        padding-bottom: 60px;
+    }
+
+    .access_text {
+        margin-top: 50px;
+    }
+}
+
+
+/* 9.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+#signup_section {
+    padding: 120px 0;
+    background: #fff8e8;
+    position: relative;
+}
+
+.shape {
+    position: relative;
+}
+
+.sign_shape_1 {
+    position: absolute;
+    right: 100px;
+    top: 0;
+}
+
+.sign_shape_2 {
+    position: absolute;
+    left: 100px;
+    bottom: -200px;
+}
+
+.signup_text p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width:991px) {
+    #signup_section {
+        padding: 70px 0;
+    }
+
+    .signup_text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sign_shape_1 {
+        right: 50px;
+    }
+}
+
+/* 9.-------------------------------------------
+                    Footer Section
+-----------------------------------------------*/
+
+
+footer {
+    padding: 30px 0;
+    background: #000;
+}
+
+.footer_logo img {
+    max-width: 250px;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+}
+
+.footer_menu ul li a {
+    color: #adadad;
+    font-size: 18px;
+    padding: 0 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.footer_menu ul li a:hover {
+    color: #fff;
+}
+
+.footer_logo ul li {
+    display: inline-block;
+}
+
+.footer_logo ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.footer_logo ul li a:hover {
+    color: #adadad;
+}
+
+.copy_right p {
+    font-size: 16px;
+}
+
+@media screen and (max-width:991px) {
+    .footer_logo img {
+        max-width: 150px;
+    }
+
+    .footer_menu ul li a {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .footer_logo ul li a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .copy_right p {
+        font-size: 15px;
+    }
+}
+
+/*-----Keframe----*/
+
+.tb_animation {
+    position: relative;
+    animation-name: tb_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tb_animation {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.zoom-in-out {
+    animation: zoom-in-out 2s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
