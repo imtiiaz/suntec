@@ -145,6 +145,7 @@ button:focus,
 
 header {
     padding: 20px 0;
+    overflow-x: hidden;
 }
 
 .main_menu {
@@ -381,6 +382,12 @@ header .button .btn:hover {
 #business_section {
     background: #fff8e8;
     padding: 100px 0;
+    position: relative;
+}
+
+#business_section .black_shape img {
+    left: 130px;
+    max-width: 200px;
 }
 
 .business_text h2 {
@@ -520,6 +527,13 @@ header .button .btn:hover {
     position: relative;
 }
 
+.black_shape img {
+    position: absolute;
+    top: -65px;
+    right: 300px;
+    max-width: 250px;
+}
+
 .shape {
     position: relative;
 }
@@ -542,8 +556,14 @@ header .button .btn:hover {
 }
 
 @media screen and (max-width:991px) {
+    
     #signup_section {
         padding: 70px 0;
+    }
+
+    .black_shape img {
+        top: -35px;
+        max-width: 150px !important;
     }
 
     .signup_text p {
@@ -552,8 +572,15 @@ header .button .btn:hover {
 }
 
 @media screen and (max-width:767px) {
+
     .sign_shape_1 {
         right: 50px;
+    }
+}
+@media screen and (max-width:575px) {
+
+        .black_shape img {
+        display: none!important;
     }
 }
 
