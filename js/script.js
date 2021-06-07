@@ -2,14 +2,6 @@ $(function () {
 
     "use strict";
 
-    // Pre Loader 
-    var loader = document.getElementById("loader");
-    window.addEventListener("load", function () {
-
-        loader.style.visibility = "hidden";
-
-    });
-
     //     Menufix
 
     var navoff = $(".main_menu").offset().top;
@@ -58,50 +50,39 @@ $(function () {
 
     // Featured slider
 
-    $('.featured_slider').slick({
+    $('.clients_slider').slick({
         dots: false,
         infinite: true,
         autoplay: true,
         arrows: false,
         autoplaySpeed: 1000,
-        speed: 1300,
-        slidesToShow: 4,
+        speed: 1200,
+        slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 800,
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+    }, {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                 }
     }, {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-    }
+        breakpoint: 576,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+        }
+}
   ]
     });
 
 
-    // scroll top 
-
-
-    $(".scroll_top").on('click', function () {
-        $("html,body").animate({
-            scrollTop: 0,
-        }, 800);
-    });
-    $(window).on('scroll', function () {
-        var scrolling = $(this).scrollTop();
-
-        if (scrolling > 200) {
-            $(".scroll_top").fadeIn();
-        } else {
-            $(".scroll_top").fadeOut();
-        }
-    });
 
     // Closes responsive menu when a scroll link is clicked
 
@@ -110,44 +91,5 @@ $(function () {
     });
 
 
-    // Wow js
-
-    new WOW().init();
-
-
-    //Fact Counter + Text Count
-
-    if ($('.count-box').length) {
-
-        $('.count-box').appear(function () {
-            var $t = $(this),
-
-                n = $t.find(".count-text").attr("data-stop"),
-
-                r = parseInt($t.find(".count-text").attr("data-speed"), 10);
-
-            if (!$t.hasClass("counted")) {
-                $t.addClass("counted");
-                $({
-                    countNum: $t.find(".count-text").text()
-                }).animate({
-                    countNum: n
-                }, {
-                    duration: r,
-                    easing: "linear",
-                    step: function () {
-                        $t.find(".count-text").text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $t.find(".count-text").text(this.countNum);
-                    }
-                });
-            }
-
-        }, {
-            accY: 0
-        });
-
-    }
 
 });

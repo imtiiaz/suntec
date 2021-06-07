@@ -1,44 +1,42 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Responsive  Landing Page Template  
-    Template URI:
-    Description: This is html5 template
-    Author: 
-    Author URI: 
-    Version: 2
-
------------------------------------------------------------------------------------
-    
-    CSS INDEX
-    ===================
-	
-    1. Template default css
-    2. Header Section
-    3. Slider Section
-    4. Service Section 
-    5. About Section
-    6. Career Section
-    7. Testimonials Section
-    8. Subscribe Section 
-    9. Pricing Section
-    10. Counter Section
-    11. Footer Section
-    12. Scrollup
-    13. Blog details
-    
-    
------------------------------------------------------------------------------------*/
-
-
 /* 1.---------------------------------------------
                 Template default css
 ------------------------------------------------*/
+
+@font-face {
+    font-family: mazzardh-black;
+    src: url(../fontfamily/MazzardH-Black.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: mazzardh-extrabold;
+    src: url(../fontfamily/MazzardH-ExtraBold.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: mazzardh-bold;
+    src: url(../fontfamily/MazzardH-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: mazzardh-regular;
+    src: url(../fontfamily/MazzardH-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: mazzardh-extralight;
+    src: url(../fontfamily/MazzardH-ExtraLight.otf);
+    font-weight: 200;
+}
 
 body {
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'mazzardh-regular', sans-serif;
     color: #000000;
     overflow-x: hidden;
 }
@@ -81,10 +79,9 @@ a {
 }
 
 p {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    color: #666666;
-    font-weight: 500;
+    font-size: 20px;
+    font-family: 'mazzardh-regular', sans-serif;
+    color: #000000;
 }
 
 @media screen and (max-width:767px) {
@@ -100,12 +97,15 @@ h4,
 h5,
 h6 {
     color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'mazzardh-bold', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
 }
 
 h2 {
-    font-size: 45px;
-    font-weight: 900;
+    font-size: 49px;
     text-align: center;
 }
 
@@ -144,12 +144,18 @@ button:focus,
 -----------------------------------------------*/
 
 header {
-    padding: 20px 0;
+    padding: 10px 0;
     overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+    background: #fff;
 }
 
 .main_menu {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .menu_fix {
@@ -166,11 +172,16 @@ header {
     border: 1px solid #000;
 }
 
+.navbar-brand img {
+    max-width: 190px;
+}
+
 .navbar-nav .nav-item .nav-link {
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
-    margin: 5px 30px;
+    margin: 5px 25px;
     padding: 0;
+    font-family: 'mazzardh-regular', sans-serif;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -183,11 +194,12 @@ header {
 }
 
 .button .btn {
-    font-size: 18px;
+    font-size: 16px;
     background: #000;
     color: #fff;
-    padding: 20px 30px;
-    border: 1px solid #000;
+    font-family: 'mazzardh-bold', sans-serif;
+    padding: 25px 32px;
+    border: 2px solid #000;
     cursor: pointer;
     font-weight: 500;
     line-height: 1;
@@ -249,28 +261,31 @@ header .button .btn:hover {
                     Banner Section
 -----------------------------------------------*/
 
+#banner_section {
+    margin-top: 115px;
+}
+
 .banner_text h4 {
-    font-size: 18px;
-    color: #dd3700;
+    font-size: 16px;
+    color: #de3700;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .banner_text h1 {
-    font-size: 70px;
-    font-weight: 900;
-    padding: 10px 0 15px;
+    padding: 10px 0 20px;
 }
 
 .banner_text p {
     padding-bottom: 25px;
 }
 
-.banner_img {
-    padding-top: 70px;
-}
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #banner_section {
+        margin-top: 80px;
+    }
+}
 
 /* 4.-------------------------------------------
                     About Section
@@ -293,50 +308,28 @@ header .button .btn:hover {
 -----------------------------------------------*/
 
 #efficiency_section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 #efficiency_section h2 {
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .efficiency_item {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     padding: 0 30px;
-}
-
-.efficiency_item .img {
-    position: relative;
-    display: inline-block;
-}
-
-.efficiency_item .img:after {
-    position: absolute;
-    content: '';
-    background: #fde6b2;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    right: -10px;
-    top: -20px;
-    z-index: -1;
-}
-
-.efficiency_item img {
-    max-width: 75px;
 }
 
 .efficiency_item h3 {
     font-size: 20px;
-    font-weight: 700;
-    padding-top: 20px;
 }
 
 .many_more a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
+    margin-top: 50px;
     color: #000;
     text-transform: uppercase;
 }
@@ -346,43 +339,59 @@ header .button .btn:hover {
         padding: 0;
     }
 
-    .efficiency_item .img:after {
-        width: 30px;
-        height: 30px;
-        top: -10px;
-    }
-
-    .efficiency_item img {
-        max-width: 50px;
-    }
-
     .efficiency_item h3 {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width:767px) {
+    #efficiency_section {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
     #efficiency_section h2 {
         padding-bottom: 70px;
     }
 
     .efficiency_item {
         padding: 0 30px;
-        margin-bottom: 50px
+        margin-bottom: 0;
     }
 
     .many_more a {
         font-size: 16px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:575px) {
+    .efficiency_item h3 {
+        font-size: 14px;
     }
 }
 
 /* 6.-------------------------------------------
                     Business Section
 -----------------------------------------------*/
+
 #business_section {
-    background: #fff8e8;
+    /*    background: #fff8e8;*/
     padding: 100px 0;
     position: relative;
+}
+
+.earth {}
+
+.earth #lottie_2 {
+    position: absolute;
+    height: 600px;
+    width: 520px;
+    right: 0;
+    bottom: 0;
+}
+
+#business_section .container {
+    z-index: 999999;
 }
 
 #business_section .black_shape img {
@@ -395,12 +404,12 @@ header .button .btn:hover {
 }
 
 .business_item {
-    padding-top: 25px;
+    padding-top: 35px;
     padding-left: 20px;
 }
 
 .business_item h2 {
-    font-size: 32px;
+    font-size: 35px;
     text-align: left;
     padding: 10px 0;
     position: relative;
@@ -440,7 +449,27 @@ header .button .btn:hover {
 -----------------------------------------------*/
 
 #help_section {
-    padding: 120px 0;
+    padding: 120px 0 170px;
+}
+
+#help_section .help_img {
+    position: relative;
+}
+
+#help_section .shape img {
+    position: absolute;
+    bottom: -60px;
+    right: 100px;
+    box-shadow: 0px 25px 45px 0px rgba(22, 52, 61, 0.15);
+    border-radius: 10px;
+}
+
+#help_section .black_round img {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+    width: 80px;
 }
 
 .help_text {
@@ -450,14 +479,11 @@ header .button .btn:hover {
 .help_text p {
     padding-top: 30px;
     color: #98948b;
-    font-size: 20px;
 }
-
 
 @media screen and (max-width:1199px) {
     .help_text {
         padding-top: 0;
-        padding-left: 20px;
         padding-right: 10px;
     }
 
@@ -472,8 +498,21 @@ header .button .btn:hover {
     }
 
     .help_text {
-        margin-top: 50px;
+        margin-top: 90px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
+}
+
+@media screen and (max-width:575px) {
+    #help_section {
+        overflow: hidden;
+    }
+
+    #help_section .shape img {
+        max-width: 200px;
+    }
+
 }
 
 /* 8.-------------------------------------------
@@ -481,24 +520,59 @@ header .button .btn:hover {
 -----------------------------------------------*/
 
 #access_section {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .access_text {
-    padding: 100px 40px 0;
+    padding-right: 100px;
+}
+
+.access_text .access_icon img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 25px 45px 0px rgba(22, 52, 61, 0.15);
+    margin-bottom: 20px;
 }
 
 .access_text p {
     padding-top: 30px;
-    color: #98948b;
-    font-size: 20px;
 }
+
+.access_img {
+    position: relative;
+}
+
+
+.access_img .account_created img {
+    position: absolute;
+    top: 100px;
+    left: -70px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 45px 0px rgba(22, 52, 61, 0.15);
+}
+
+.access_img .sign_up img {
+    position: absolute;
+    bottom: -40px;
+    right: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 45px 0px rgba(22, 52, 61, 0.15);
+}
+
+.access_img .black_round img {
+    position: absolute;
+    max-width: 80px;
+    bottom: -40px;
+    left: -40px;
+    z-index: -1;
+}
+
 
 @media screen and (max-width:1199px) {
     .access_text {
-        padding-top: 0;
         padding-left: 20px;
-        padding-right: 10px;
+        padding-right: 25px;
     }
 
     .access_text p {
@@ -512,13 +586,61 @@ header .button .btn:hover {
     }
 
     .access_text {
-        margin-top: 50px;
+        margin-top: 80px;
+    }
+
+    .access_img .account_created img {
+        left: 30px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .access_img .account_created img {
+        width: 150px;
+    }
+
+    .access_img .sign_up img {
+        right: 20px;
+        width: 200px;
+    }
+
+    .access_text .access_icon img {
+        width: 50px;
+        height: 50px;
     }
 }
 
 
 /* 9.-------------------------------------------
-                    About Section
+                    Clients Section
+-----------------------------------------------*/
+
+#clients_section {
+    padding: 100px 0;
+    background: #fef7f3;
+}
+
+#clients_section .clients_text h2 {
+    font-size: 30px;
+}
+
+#clients_section .slick-initialized .slick-slide {
+    text-align: -webkit-center;
+}
+
+#clients_section .clients_logo img {
+    max-height: 40px;
+}
+
+@media screen and (max-width:991px) {
+    #clients_section .clients_text h2 {
+        padding-bottom: 40px;
+    }
+}
+
+
+/* 9.-------------------------------------------
+                    Signup Section
 -----------------------------------------------*/
 
 #signup_section {
@@ -551,12 +673,11 @@ header .button .btn:hover {
 }
 
 .signup_text p {
-    font-size: 20px;
     padding-top: 20px;
 }
 
 @media screen and (max-width:991px) {
-    
+
     #signup_section {
         padding: 70px 0;
     }
@@ -577,12 +698,36 @@ header .button .btn:hover {
         right: 50px;
     }
 }
+
 @media screen and (max-width:575px) {
 
-        .black_shape img {
-        display: none!important;
+    .black_shape img {
+        display: none !important;
     }
 }
+
+
+/*-------------------------------------------
+                    Video Section Start
+-----------------------------------------------*/
+
+
+
+#video_section {
+    margin: 100px 0;
+}
+
+@media screen and (max-width:767px) {
+    #video_section {
+        margin: 50px 0;
+    }
+}
+
+/*-------------------------------------------
+                    Video Section End
+-----------------------------------------------*/
+
+
 
 /* 9.-------------------------------------------
                     Footer Section
@@ -659,6 +804,123 @@ footer {
         font-size: 15px;
     }
 }
+
+
+
+/* 10.-------------------------------------------
+                    How It Works Page
+-----------------------------------------------*/
+
+.how_works {
+    margin-top: 115px;
+}
+
+h2.numbering {
+    color: #bfbfbf;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.how_works .access_text {
+    padding-top: 50px;
+}
+
+.how_works_2 {
+    margin-top: 30px;
+}
+
+.how_works_2 .access_text {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.how_works_2 .access_img .blank_chart img {
+    box-shadow: 0px 25px 45px 0px rgba(22, 52, 61, 0.15);
+    position: absolute;
+    left: 100px;
+    bottom: -120px;
+    border-radius: 10px;
+}
+
+.how_works_2 .access_img .black_round img {
+    right: -40px;
+    bottom: -40px;
+    left: inherit;
+}
+
+.how_works_2 .john_doe img {
+    position: absolute;
+    top: 17%;
+    right: 5px;
+    box-shadow: 0px 25px 45px 0px rgb(22 52 61 / 15%);
+}
+
+.how_works_3 {
+    margin-top: 0;
+}
+
+.how_works_3 .john_doe_green img {
+    position: absolute;
+    left: -100px;
+    top: 80px;
+}
+
+@media screen and (max-width:1199px) {
+    .how_works_3 .john_doe_green img {
+        left: -65px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .how_works {
+        margin-top: 90px;
+    }
+
+    .how_works .access_text {
+        padding-top: 0;
+    }
+
+    .how_works_2 {
+        margin-top: 0;
+    }
+
+    .how_works_2 .john_doe img {
+        right: 20px;
+    }
+
+    .how_works_2 .access_text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .how_works_3 .john_doe_green img {
+        left: 25px;
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .how_works_2 .access_text {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .how_works_2 .john_doe img {
+        width: 100px;
+    }
+
+    .how_works_3 .john_doe_green img {
+        max-width: 200px;
+        left: 10px;
+    }
+}
+
+
 
 /*-----Keframe----*/
 
